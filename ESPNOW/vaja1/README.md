@@ -73,15 +73,12 @@ delay(2000) → pošiljanje vsaki 2 sekundi
 ```
 
 ## Ugotovitve
-ESP-NOW omogoča peer-to-peer komunikacijo brez interneta.
-
-Callback funkcije omogočajo samodejni prejem sporočil.
-
-MAC naslov je edinstven identifikator peer naprave.
-
-ESP32 lahko komunicira brez WiFi Access Pointa, le v STA mode.
+- ESP-NOW omogoča peer-to-peer komunikacijo brez interneta.
+- Callback funkcije omogočajo samodejni prejem sporočil.
+- MAC naslov je edinstven identifikator peer naprave.
+- ESP32 lahko komunicira brez WiFi Access Pointa, le v STA mode.
 
 ## Zaključek
-Vaja uspešno prikazuje delovanje ESP-NOW protokola na ESP32.
+- Vaja uspešno prikazuje delovanje ESP-NOW protokola na ESP32.
+- Spoznal sem osnovne koncepte peer-to-peer komunikacije, uporabo WiFi radia brez interneta in pravilno obdelavo pošiljanja in prejemanja podatkov.
 
-Spoznal sem osnovne koncepte peer-to-peer komunikacije, uporabo WiFi radia brez interneta in pravilno obdelavo pošiljanja in prejemanja podatkov.
