@@ -37,9 +37,9 @@ void loop() {
     Serial.println("Client disconnected.");
   }
 }
-Klient (ESP32 povezan na strežnik)
-cpp
-Kopiraj kodo
+```
+## Klient (ESP32 povezan na strežnik)
+```cpp
 #include <WiFi.h>
 
 const char* ssid = "ESP32-Chat-Server";
@@ -60,7 +60,8 @@ void loop() {
     client.println(msg);                   // pošlji sporočilo strežniku
   }
 }
-Najpomembnejše stvari
+```
+## Najpomembnejše stvari
 WiFi.softAP(ssid, password) → ustvari strežnikov WiFi
 
 WiFiServer server(80) → posluša na portu 80
@@ -77,9 +78,10 @@ Serial.readStringUntil('\n') → prebere sporočilo, ki ga pošlješ v Serial Mo
 
 client.println(msg) → pošlje sporočilo strežniku
 
-Zaključek
+## Zaključek
 Uspelo mi je narediti enostaven chat room z ESP32 napravami.
 
 Spoznal sem osnovno Access Point + Client komunikacijo preko WiFi.
+
 
 Serial Monitor se uporablja kot tipkovnica in prikaz sporočil.
