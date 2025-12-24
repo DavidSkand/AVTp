@@ -42,22 +42,16 @@ currentLine.length() == 2 → preveri prazno vrstico, ki pomeni konec HTTP zahte
 \r = carriage return (vrni se na začetek vrstice)
 
 \n = newline (nova vrstica)
+```
 
-Kaj vpliva na delovanje
+## Kaj vpliva na delovanje
 IP naslov AP: naprave ga morajo poznati za povezavo
 
 Port serverja: mora biti isti kot klient pričakuje
 
 Zaporedje znakov \r\n: pravilno zazna konec zahtevka
 
-Slike / Diagram
-Slika vezja ESP32
-
-Posnetek serijskega monitorja: “New Client” in IP naslov
-
-Zaključek
-Razumel sem, kako ESP32 deluje kot AP
-
-Spoznal sem HTTP komunikacijo in kako se ESP32 odzove na klienta
-
-Naučil sem se pomena posebnih znakov v protokolu in kako kontrolirati konec zahtevka
+## Zaključek
+-Razumel sem, kako ESP32 deluje kot AP
+-Spoznal sem HTTP komunikacijo in kako se ESP32 odzove na klienta
+-Naučil sem se pomena posebnih znakov v protokolu in kako kontrolirati konec zahtevka
