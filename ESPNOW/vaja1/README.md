@@ -15,7 +15,7 @@ Vaja vključuje dve napravi:
 
 ---
 
-# Receiver (sprejemnik)
+## Receiver (sprejemnik)
 
 ```cpp
 WiFi.mode(WIFI_STA);                  // Nastavi ESP32 v WiFi Station mode
@@ -42,9 +42,10 @@ esp_now_register_recv_cb() → callback funkcija, ki se sproži, ko ESP32 prejme
 
 onDataReceived() → izpiše MAC naslov pošiljatelja in dolžino prejetega sporočila
 
-Sender (pošiljatelj)
-cpp
-Kopiraj kodo
+```
+
+## Sender (pošiljatelj)
+```cpp
 WiFi.mode(WIFI_STA);                  // STA mode za pošiljanje
 esp_now_init();                       // Inicializacija ESP-NOW
 
@@ -69,8 +70,9 @@ peerInfo.encrypt → false pomeni brez šifriranja
 esp_now_send() → pošlje sporočilo kot bajte
 
 delay(2000) → pošiljanje vsaki 2 sekundi
+```
 
-Ugotovitve
+## Ugotovitve
 ESP-NOW omogoča peer-to-peer komunikacijo brez interneta.
 
 Callback funkcije omogočajo samodejni prejem sporočil.
@@ -79,6 +81,7 @@ MAC naslov je edinstven identifikator peer naprave.
 
 ESP32 lahko komunicira brez WiFi Access Pointa, le v STA mode.
 
-Zaključek
+## Zaključek
 Vaja uspešno prikazuje delovanje ESP-NOW protokola na ESP32.
+
 Spoznal sem osnovne koncepte peer-to-peer komunikacije, uporabo WiFi radia brez interneta in pravilno obdelavo pošiljanja in prejemanja podatkov.
